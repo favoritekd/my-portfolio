@@ -210,7 +210,10 @@ footer {
     font-size: 15px;
     gap: 10px;
   }
-
+  header {
+    display: flex;
+    flex-direction: row;
+  }
   .home {
     display: none;
   }
