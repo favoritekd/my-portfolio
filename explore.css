@@ -203,7 +203,7 @@ p {
   }
 }
 
-@media screen and (min-width: 320px) {
+@media (min-width: 320px) {
   .wecome-section {
     max-width: 300px;
   }
