@@ -188,6 +188,49 @@ p {
   opacity: 0;
   animation: fadeIn 1.5s ease-in forwards;
 }
+@media screen and (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .card {
+    height: 280px;
+  }
+
+  .card img {
+    height: 130px;
+  }
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 300px; /* Fixed height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  height: 150px; /* Fixed image height */
+  width: 100%;
+  object-fit: cover; /* This keeps the image from stretching */
+}
+
+.card h3,
+.card p {
+  margin: 10px;
+  font-size: 14px;
+  text-align: center;
+}
 
 @keyframes fadeIn {
   to {
