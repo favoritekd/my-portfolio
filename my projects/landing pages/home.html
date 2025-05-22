@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goodie X/product page</title>
-    <link rel="stylesheet" href="home.css" />
+    <title>Goodie X / Product Page</title>
+    <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
       rel="stylesheet"
@@ -16,9 +16,9 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navbar">
         <h1 id="logo">GOODIE X</h1>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#products">Products</a></li>
           <li><a href="#about">About</a></li>
@@ -26,19 +26,23 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <section id="home">
+      <section id="home" class="hero-section">
         <h1 id="welcome">Welcome to Goodie X</h1>
         <h2>
-          Goodie X is a fashion brand dedicated to providing high-quality
-          clothing and accessories.
+          Goodie X is a fashion brand dedicated to high-quality clothing and
+          accessories.
         </h2>
         <p>Discover our latest fashion trends</p>
         <button>Explore</button>
       </section>
-      <section id="products">
+
+      <section id="products" class="products-section">
         <h2>Our Products</h2>
         <div class="product-grid">
+          <!-- Repeatable Product Block -->
+          <!-- Use unique names later if needed -->
           <div class="product">
             <img
               src="images/WhatsApp Image 2025-05-18 at 7.02.14 PM.jpeg"
@@ -138,13 +142,14 @@
       <section id="contact">
         <h2>Get in Touch</h2>
         <p>Follow us on social media:</p>
-        <ul>
+        <ul class="social-links">
           <li><a href="#">Instagram</a></li>
           <li><a href="#">Facebook</a></li>
           <li><a href="#">Twitter</a></li>
         </ul>
       </section>
     </main>
+
     <script src="home.js"></script>
   </body>
 </html>
