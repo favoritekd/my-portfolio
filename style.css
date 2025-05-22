@@ -198,6 +198,9 @@ footer {
     padding: 20px;
     text-align: center;
   }
+   .content h1 {
+    font-size: 3rem;
+  }
 }
 @media screen and (min-width: 320px) {
   .nav {
