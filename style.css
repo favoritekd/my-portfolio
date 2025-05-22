@@ -190,7 +190,7 @@ footer {
   }
 
   .content h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .content p {
@@ -200,6 +200,28 @@ footer {
   .content a {
     padding: 10px 30px;
     font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  header p {
+    display: block;
+  }
+
+  .container ul {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+  .container ul li a {
+    font-size: 18px;
+    padding: 0.5rem 1rem;
   }
 }
 
