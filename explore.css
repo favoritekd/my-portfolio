@@ -202,6 +202,51 @@ p {
     height: 130px;
   }
 }
+@media screen and (max-width: 768px) {
+  section {
+    padding: 15px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem; /* around 32px */
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.5rem; /* around 24px */
+    line-height: 1.3;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container,
+  .content,
+  .main {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
 
 @media (min-width: 320px) {
   .wecome-section {
