@@ -199,7 +199,7 @@ footer {
     text-align: center;
   }
 }
-@media screen and (min-width: 368px) {
+@media screen and (min-width: 320px) {
   .nav {
     flex-direction: row;
     align-items: center;
