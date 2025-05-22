@@ -190,7 +190,7 @@ footer {
   text-decoration: underline;
 }
 @media screen and (max-width: 768px) {
-  .nav {
+  .container {
     flex-direction: column;
     align-items: center;
   }
@@ -198,18 +198,19 @@ footer {
     padding: 20px;
     text-align: center;
   }
-   .content h1 {
+  .content h1 {
     font-size: 3rem;
   }
 }
 @media screen and (min-width: 320px) {
-  .nav {
+  .container {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
     font-size: 15px;
     gap: 10px;
   }
+
   .home {
     display: none;
   }
