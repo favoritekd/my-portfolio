@@ -419,12 +419,10 @@ form textarea {
   color: #007bff;
 }
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
-  max-width: 900px;
-  margin: auto;
-  padding: 0 20px;
 }
 
 .project a {
@@ -432,6 +430,8 @@ form textarea {
 }
 
 .card {
+  flex: 1 1 250px;
+  max-width: 300px;
   background: #fff;
   border: 2px solid #007bff;
   border-radius: 12px;
