@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="type.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Typing Speed Test</h2>
+      <p id="text-display"></p>
+      <textarea
+        id="text-input"
+        placeholder="Start typing..."
+        disabled
+      ></textarea>
+      <button id="start-btn">Start Test</button>
+      <div class="stats">
+        <p>⏱ Time: <span id="timer">60</span>s</p>
+        <p>❌ Mistakes: <span id="mistakes">0</span></p>
+        <p>
+          🏁 Level:
+          <span id="level-num"
+            >1
+            <div class="progress-container">
+              <div class="progress-bar" id="progress-bar"></div>
+            </div>
+          </span>
+          <button id="reset-levels" class="reset-btn">
+            🔁 Restart at Level 1
+          </button>
+        </p>
+      </div>
+      <div id="level-selector-container" class="level-selector-container">
+        <h2>Select a Level</h2>
+        <div id="level-selector" class="level-selector"></div>
+      </div>
+    </div>
+
+    <script src="type.js"></script>
+  </body>
+</html>

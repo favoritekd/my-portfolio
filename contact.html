@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me | Favorite Kido</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <header>
+      <h1>FK</h1>
+      <p>Frontend Web Developer | HTML • CSS • JavaScript</p>
+      <nav class="container">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="projects.html" target="_blank">Projects</a></li>
+          <li><a href="explore.html" target="_blank">Portfolio</a></li>
+          <li><a href="contact.html" target="_blank">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-section">
+        <h2>Contact Me</h2>
+        <div class="contact-wrapper">
+          <div class="contact-image">
+            <img
+              src="my projects/images/my profile.jpg"
+              alt="Contact Illustration"
+            />
+          </div>
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/meogaoow"
+            method="POST"
+          >
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" name="name" id="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Your Budget</label>
+              <input type="text" name="budget" id="budget" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" id="submit-btn">Send Message</button>
+
+            <p id="loading-message" class="info-text" style="display: none">
+              Sending...
+            </p>
+            <p id="form-message" class="success-text" style="display: none">
+              Thank you! Message sent successfully.
+            </p>
+            <p id="error-message" class="error-text" style="display: none">
+              Something went wrong. Please try again.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="my-portfolio.js"></script>
+  </body>
+</html>

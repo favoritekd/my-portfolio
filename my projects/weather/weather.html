@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🌤️ Weather Dashboard</h1>
+      <p>Get real-time weather and news updates!</p>
+    </header>
+
+    <main>
+      <!-- Weather Display -->
+      <section class="weather-section">
+        <div class="weather-info">
+          <h2 id="city-name">Loading...</h2>
+          <p id="temperature"></p>
+          <p id="description"></p>
+          <img
+            id="weather-icon"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2qviiiP13udVI1OUOkrbCkrjeU0DCjGD1xWsK0G_i6o_9QMnkhdZoEDtFvrvLIPyMUuo&usqp=CAU"
+            alt="Weather icon"
+          />
+        </div>
+        <div id="loading-spinner" style="display: none">Loading...</div>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+
+        <!-- Search -->
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search city..." />
+          <button onclick="searchWeather()">Search</button>
+        </div>
+      </section>
+
+      <!-- News Section -->
+      <section class="news-section">
+        <h2>🌍 Weather News</h2>
+        <div id="news-container" class="news-container"></div>
+      </section>
+    </main>
+
+    <script src="weather.js"></script>
+  </body>
+</html>

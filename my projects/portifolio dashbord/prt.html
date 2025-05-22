@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Admin Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="prt.css">
+  
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Dashboard</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Analytics</a>
+      <a href="#">Projects</a>
+      <a href="#">Settings</a>
+    </nav>
+  </div>
+
+  <div class="main">
+    <div class="topbar">
+      <h1>Welcome Back!</h1>
+      <button class="toggle-mode" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
+
+    <div class="cards">
+      <div class="card">Projects: 12</div>
+      <div class="card">Views: 4,320</div>
+      <div class="card">Messages: 23</div>
+      <div class="card">Followers: 890</div>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <div class="data-table">
+      <input type="text" class="search-input" onkeyup="filterTable()" placeholder="Search by name..." />
+      <table id="portfolioTable">
+        <thead>
+          <tr><th>Name</th><th>Status</th><th>Views</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Portfolio Site</td><td>Complete</td><td>1,200</td></tr>
+          <tr><td>Weather App</td><td>In Progress</td><td>890</td></tr>
+          <tr><td>Task Manager</td><td>Complete</td><td>1,500</td></tr>
+          <tr><td>Recipe Finder</td><td>Pending</td><td>300</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+ <script src="prt.js"></script>
+</body>
+</html>
