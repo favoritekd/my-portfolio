@@ -590,6 +590,10 @@ form textarea {
   .tech-stack {
     display: none;
   }
+  section {
+    width: 90%;
+    font-size: medium;
+  }
 }
 
 /* 3. Medium Devices */
@@ -618,6 +622,10 @@ form textarea {
   }
   .tech-stack {
     margin-right: 20px;
+  }
+  section {
+    width: 90%;
+    font-size: medium;
   }
 }
 
@@ -655,7 +663,7 @@ form textarea {
   #welcome-section img.image {
     order: -1; /* puts the image at the top */
     width: 150px; /* optional: adjust size for small screens */
-    border-radius: 50%; /* optional: keep your style */
+    border-radius: 50%; /* optional  */
     margin-bottom: 1rem; /* space between image and text */
   }
 }
