@@ -609,7 +609,7 @@ form textarea {
   header h1 {
     background-color: rgba(8, 175, 252, 0.42);
     border-radius: 50%;
-    width: 90px;
+    width: 100px;
     text-align: center;
     text-shadow: 0 0 2px gray, 0 0 3px #00aaff, 0 0 5px #ffff, 0 0 10px #a64dff;
     font-size: 2rem;
