@@ -174,23 +174,30 @@ footer {
 }
 
 /* Responsive Design */
+/* Base Styles (Desktop First) */
+.role {
+  display: block;
+}
+
+/* Tablet & Below: Hide .role */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
+    align-items: center;
   }
 
-  header p {
-    display: none;
+  .role {
+    display: none !important;
   }
 
   .container ul {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
   .content h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .content p {
@@ -202,7 +209,25 @@ footer {
     font-size: 18px;
   }
 }
-@media screen and (orientation: landscape) {
+
+/* Mobile Specific */
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 2.2rem;
+  }
+
+  .content p {
+    font-size: 0.95rem;
+  }
+
+  .container ul li a {
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Landscape Specific Enhancements */
+@media screen and (orientation: landscape) and (min-width: 769px) {
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -210,8 +235,8 @@ footer {
     margin-bottom: 30px;
   }
 
-  header p {
-    display: block;
+  .role {
+    display: block !important;
   }
 
   .container ul {
@@ -222,21 +247,6 @@ footer {
 
   .container ul li a {
     font-size: 18px;
-    padding: 0.5rem 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .content h1 {
-    font-size: 2.5rem;
-  }
-
-  .content p {
-    font-size: 0.95rem;
-  }
-
-  .container ul li a {
-    font-size: 16px;
     padding: 0.5rem 1rem;
   }
 }

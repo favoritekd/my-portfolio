@@ -98,9 +98,10 @@ button {
 }
 #welcome {
   font-size: 4rem;
-  color: #02101d;
+  color: #f0f4f8;
   transition: all 1s;
   margin: 0;
+  box-shadow: 1px 1px 3px #0a011f;
 }
 
 #welcome:hover {

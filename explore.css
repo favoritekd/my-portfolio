@@ -277,7 +277,6 @@ header h1 {
   text-align: center;
   text-shadow: 0 0 2px gray, 0 0 3px #00aaff, 0 0 5px #ffff, 0 0 10px #a64dff;
 }
-/* Responsive Design */
 
 footer {
   background: inherit;
@@ -405,7 +404,6 @@ form button:active {
   transform: translateY(-1px);
   box-shadow: 0 10px 20px rgba(0, 5px, 10px, 0.2);
 }
-/* Responsive tweaks */
 
 form input,
 form textarea {
@@ -465,7 +463,6 @@ form textarea {
   font-size: 14px;
   padding: 0 10px 15px;
 }
-/* Responsive: Stack menu on small screens */
 
 /* Header layout */
 .header {
@@ -525,14 +522,14 @@ form textarea {
 }
 
 /* Adjust font size on smaller screens */
-/* 1. Extra Small Devices */
+/* 1.responsive Extra Small Devices */
 @media (max-width: 480px) {
   body {
     font-size: 14px;
   }
   .nav-links {
     gap: 1rem;
-    font-size: 10px;
+    font-size: 6px;
   }
   .projects-grid {
     grid-template-columns: 1fr;
