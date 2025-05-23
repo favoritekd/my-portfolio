@@ -186,7 +186,9 @@ footer {
     text-align: center;
     align-items: center;
   }
-
+  .home {
+    display: none;
+  }
   .role {
     display: none !important;
   }
@@ -215,7 +217,9 @@ footer {
   .content h1 {
     font-size: 2.2rem;
   }
-
+  .home {
+    display: none;
+  }
   .content p {
     font-size: 0.95rem;
   }
