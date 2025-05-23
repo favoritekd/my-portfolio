@@ -529,9 +529,10 @@ form textarea {
   }
   .nav-links {
     gap: 1rem;
-    font-size: 6px;
+    font-size: 12px;
   }
   .projects-grid {
+    display: grid;
     grid-template-columns: 1fr;
   }
   .image {
@@ -564,6 +565,7 @@ form textarea {
     overflow-x: auto;
   }
   .projects-grid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
   header h1 {
@@ -592,12 +594,13 @@ form textarea {
 /* 3. Medium Devices */
 @media (min-width: 768px) and (max-width: 991px) {
   .projects-grid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
   .image {
     width: 120px;
 
-    align-self: right;
+    align-self: flex-end;
     padding-right: 0;
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(0, 153, 255, 0.6);
@@ -620,6 +623,7 @@ form textarea {
 /* 4. Large Devices */
 @media (min-width: 992px) and (max-width: 1199px) {
   .projects-grid {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -627,6 +631,7 @@ form textarea {
 /* 5. Extra Large Devices */
 @media (min-width: 1200px) and (max-width: 1440px) {
   .projects-grid {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
